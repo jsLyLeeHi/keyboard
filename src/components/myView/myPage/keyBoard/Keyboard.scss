@@ -1,0 +1,120 @@
+/* 车牌键盘组件命名空间 pkd
+* 解决h5端同名样式问题
+*/
+$themeColor: #e59100;
+
+.pkd-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+  width: 100vw;
+  height: 100vh;
+}
+.pkd-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5dadd;
+  border-top: 1px solid #bebdbd;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -500px;
+  z-index: 999;
+  transition: all 0.5s;
+  .pkd-close-bar {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    color: $themeColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #f8f8f8;
+
+    .pkd-close {
+      margin-right: 25px;
+    }
+  }
+
+  .pkd-key-panel {
+    width: 100%;
+    min-width: 750px;
+    height: 432px;
+
+    .pkd-margin-top-13x {
+      margin-top: 13px;
+    }
+
+    .pkd-row {
+      width: 100%;
+      height: 82px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .pkd-key {
+        width: 75px;
+        height: 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:active {
+          transform: scale3d(0.9, 0.9, 0.9);
+          color: $themeColor;
+        }
+
+        .pkd-key-bg {
+          width: 75px;
+          height: 82px;
+          position: absolute;
+        }
+
+        .pkd-key-value {
+          position: relative;
+        }
+      }
+
+      .pkd-fkey {
+        width: 112px;
+        height: 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:active {
+          transform: scale3d(0.9, 0.9, 0.9);
+          color: $themeColor;
+        }
+
+        .pkd-fkey-bg {
+          width: 112px;
+          height: 82px;
+          position: absolute;
+        }
+
+        .pkd-delete-key {
+          width: 53px;
+          height: 40px;
+          position: relative;
+        }
+
+        .pkd-key-value {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+.pkd-wrapper-show{
+  bottom: 0px;
+}
+

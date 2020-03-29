@@ -1,0 +1,31 @@
+.bottonBox {
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border: 1px solid rgba(16, 142, 233, 1);
+}
+//size
+
+.small {
+  width: 281px;
+  height: 75px;
+  font-size: 28px;
+}
+.large {
+  width: 506px;
+  height: 83px;
+  font-size: 34px;
+}
+
+//type
+.primary {
+  background: rgba(16, 142, 233, 1);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 9px 19px 0px rgba(130, 203, 255, 1);
+}
+.default {
+  background: rgba(255, 255, 255, 1);
+  color: #108ee9;
+}

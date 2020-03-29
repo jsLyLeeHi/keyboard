@@ -1,0 +1,22 @@
+.pageStyle {
+  .pageBox {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    transition: all 0.5;
+    bottom: 0px;
+    .pageLogo {
+      position: fixed;
+      bottom: 28px;
+      left: 0px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .pagelogoImg {
+        width: 163px;
+        height: 54px;
+      }
+    }
+  }
+}
