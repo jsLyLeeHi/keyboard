@@ -50,5 +50,3 @@ export default Index as ComponentType
 ```
 
 ##在使用中有任何问题，欢迎留言反馈给我
-
-Edit By [MaHua](http://mahua.jser.me)
